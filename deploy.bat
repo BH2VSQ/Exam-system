@@ -2,6 +2,9 @@
 REM 考试报名管理平台Windows部署脚本
 REM 使用方法: deploy.bat [simple|full] [deploy|status|logs|stop|cleanup]
 
+REM 强制CMD使用UTF-8编码
+chcp 65001 > nul
+
 setlocal enabledelayedexpansion
 
 REM 颜色定义（Windows CMD不支持颜色，但可以用echo显示信息）

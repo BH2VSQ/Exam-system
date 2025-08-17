@@ -16,6 +16,7 @@ RUN pnpm install --frozen-lockfile
 
 # 复制源代码
 COPY . .
+COPY src/lib src/lib
 
 # 构建应用
 RUN pnpm run build

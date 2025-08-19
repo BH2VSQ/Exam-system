@@ -15,7 +15,7 @@ RUN npm install -g pnpm
 RUN pnpm install --frozen-lockfile
 
 # 复制源代码
-COPY . .
+COPY src /app/src
 
 # 构建应用
 RUN pnpm run build
